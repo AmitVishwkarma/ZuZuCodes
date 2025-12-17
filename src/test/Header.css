@@ -1,0 +1,158 @@
+/* Header Base */
+.header {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+  background: #ffffff;
+  padding: 15px 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* Left Section */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #222;
+}
+
+.logo-icon {
+  font-size: 22px;
+  color: #1da1f2;
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  gap: 22px;
+}
+
+.nav-item {
+  cursor: pointer;
+  font-size: 15px;
+  color: #333;
+}
+
+/* Right Section */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+/* Search */
+.search-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 6px 12px;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  width: 180px;
+}
+
+.search-icon {
+  font-size: 14px;
+  color: #777;
+}
+
+/* Buttons */
+.login-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: #1E2A2E;
+  justify-items: center;
+  margin-top:1px;
+
+}
+
+.signup-btn {
+  background: #00a6e7;
+  color: #fff;
+  border: none;
+  padding: 6px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  white-space: nowrap;   /* 🔴 IMPORTANT */
+}
+
+/* Mobile Button */
+.menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-item {
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.mobile-item.signup {
+  color: #00a6e7;
+  font-weight: 600;
+}
+
+/* =====================
+   Responsive
+===================== */
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+  .search-box {
+    display: none;
+  }
+
+  .login-btn,
+  .signup-btn {
+    display: none;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+}

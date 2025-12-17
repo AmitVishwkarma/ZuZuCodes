@@ -1,0 +1,154 @@
+
+
+.popular {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 24px;
+ 
+
+    background: #ffffff;
+    font-family: Arial;
+}
+
+/* Header */
+.popular-header {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popular-header h2 {
+  font-size: 44px;
+  font-weight: 800;
+  color: #1e2a2f;
+}
+
+.popular-header h2 span {
+  color: #05a9df;
+}
+
+/* Arrows */
+.nav-buttons{
+    background: #7DD6F1;
+    width: 77.84809875488281 px;
+height: 47.468353271484375 px;
+left: 1122.15px;
+border-radius: 94.94px;
+    
+}
+.nav-buttons button {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  background: #cfeffc00;
+  font-size: 30px;  
+  cursor: pointer;
+}
+
+/* Cards */
+.cards-wrapper {
+  margin-top: 56px;
+  display: flex;
+  gap: 36px;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.job-card {
+  width: 260px;
+  background: #05a9df;
+  border-radius: 26px;
+  padding: 18px;
+  overflow: hidden;
+
+}
+
+.job-card.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Title */
+.card-title {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 14px;
+  margin-left: 20px;
+}
+
+/* Image */
+.image-box {
+  position: relative;
+}
+
+
+
+.image-box img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: -33px;
+    margin-left: 18px;
+    border-top-left-radius: 30px;
+  
+}
+
+/* Explore Button */
+.explore-btn {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ffffff;
+  color: #1e2a2f;
+  border: none;
+  padding: 8px 22px;
+  border-radius: 22px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Dots */
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 34px;
+}
+
+.slider-dots span {
+  width: 10px;
+  height: 10px;
+  background: #cfd8dc;
+  border-radius: 50%;
+}
+
+.slider-dots span.active {
+  width: 36px;
+  background: #263238;
+  border-radius: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cards-wrapper {
+    overflow-x: auto;
+    justify-content: flex-start;
+  }
+
+  .job-card {
+    opacity: 1;
+    transform: none;
+    overflow: hidden;
+  }
+
+  .nav-buttons {
+    display: none;
+  }
+}
