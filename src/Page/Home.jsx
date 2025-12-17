@@ -1,7 +1,7 @@
 import React from "react";
-import "./Hero.css";
+import "./Home.css";
 
-const Hero = () => {
+const Home = () => {
   return (
     <section className="hero">
       <div className="hero-container">
@@ -54,4 +54,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Home;
