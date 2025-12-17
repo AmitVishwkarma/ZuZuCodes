@@ -10,7 +10,7 @@ const Home = () => {
           <div className="rating-badge">
             <span className="rating-text">Excellent</span>
             <span className="stars">★★★★★</span>
-            <span className="trustpilot">Trustpilot</span>
+            <span className="trustpilot">Trustpilot</span> 
           </div>
 
           <h1 className="hero-title">
