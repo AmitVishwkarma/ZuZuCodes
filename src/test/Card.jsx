@@ -6,7 +6,7 @@ const Card = () => {
     <section className="how-it-works">
       <h2 className="section-title">
         <span>How it</span> works.
-      </h2>
+      </h2> 
 
       <div className="card-wrapper">
         <div className="work-card">
